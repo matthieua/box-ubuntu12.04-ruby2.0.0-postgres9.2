@@ -1,0 +1,22 @@
+name : ubuntu12.04-ruby2.0.0
+version : 0.0.3
+inherits : wercker/ubuntu12.04-webessentials
+script : |
+  export RUBYVERSION=2.0.0-p195
+  sudo apt-get update
+  sudo apt-get install git zlib1g-dev libreadline-dev
+  sudo apt-get remove ruby1.9.1
+  cd $HOME
+  mkdir rubyinstall
+  cd rubyinstall
+  wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-$RUBYVERSION.tar.gz
+  tar xzvf ruby-$RUBYVERSION.tar.gz
+  cd ruby-$RUBYVERSION
+  ./configure --with-readline-dir=/usr/include/readline --with-openssl-dir=/usr/include/openssl
+  make
+  make test
+  sudo make install
+  cd $HOME
+  rm -fr rubyinstall
+  echo "gem: --no-rdoc --no-ri" >> $HOME/.gemrc
+  sudo gem install bundler -v "1.3"
