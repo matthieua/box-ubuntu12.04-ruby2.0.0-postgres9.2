@@ -4,7 +4,7 @@ inherits : wercker/ubuntu12.04-webessentials@0.0.2
 type : main
 platform : ubuntu@12.04
 packages :
-  - ruby@2.0.0
+  - ruby@2.0.0-p195
 keywords:
   - ruby
 script : |
