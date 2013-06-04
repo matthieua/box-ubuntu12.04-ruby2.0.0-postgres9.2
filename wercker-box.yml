@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.0.7
+version : 0.0.8
 inherits : wercker/ubuntu12.04-webessentials@0.0.3
 type : main
 platform : ubuntu@12.04
@@ -47,7 +47,7 @@ default-build:
               # A step that executes `bundle install` command
               - bundle-install
               # A step that prepares the database.yml with settings from the database you defined in services
-              - rails-database-yml      
+              #- rails-database-yml      
               # A custom script step, name value is used in the UI
               # and the code value contains the command that get executed
               - script:
