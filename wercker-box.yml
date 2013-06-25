@@ -59,7 +59,7 @@ default-build:
               # Add more steps here:
               # - script:
               #        name: rspec
-              #        script: bundle exec rspec
+              #        code: bundle exec rspec
   ruby:
     priority : 50
     detect:
@@ -84,4 +84,4 @@ default-build:
           # Add more steps here:
           #- script:
           #    name: rspec
-          #    script: bundle exec rspec
+          #    code: bundle exec rspec
