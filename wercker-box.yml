@@ -1,14 +1,14 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.0
+version : 0.1.1
 inherits : wercker/ubuntu12.04-webessentials@0.0.3
 type : main
 platform : ubuntu@12.04
 packages :
-  - ruby@2.0.0-247
+  - ruby@2.0.0-p247
 keywords:
   - ruby
 script : |
-  export RUBYVERSION=2.0.0-p195
+  export RUBYVERSION=2.0.0-p247
   sudo apt-get update
   sudo apt-get install git zlib1g-dev libreadline-dev
   sudo apt-get remove ruby1.9.1
