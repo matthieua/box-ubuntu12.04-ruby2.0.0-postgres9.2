@@ -1,5 +1,5 @@
 name : ubuntu12.04-ruby2.0.0
-version : 0.1.2
+version : 0.1.3
 inherits : wercker/ubuntu12.04-webessentials@0.0.3
 type : main
 platform : ubuntu@12.04
@@ -29,11 +29,11 @@ script : |
 
 box-detect:
   priority : 150
-  version : 
+  version :
   detect:
     - inFiles:
       - Gemfile : ruby "2.0.0"
-      
+
 default-build:
   ruby-on-rails:
     priority: 100
@@ -47,7 +47,7 @@ default-build:
               # A step that executes `bundle install` command
               - bundle-install
               # A step that prepares the database.yml with settings from the database you defined in services
-              #- rails-database-yml      
+              #- rails-database-yml
               # A custom script step, name value is used in the UI
               # and the code value contains the command that get executed
               - script:
@@ -55,7 +55,7 @@ default-build:
                   code: |
                       echo "ruby version $(ruby --version) running"
                       echo "from location $(which ruby)"
-                      echo -p "gem list: $(gem list)"      
+                      echo -p "gem list: $(gem list)"
               # Add more steps here:
               # - script:
               #        name: rspec
@@ -70,8 +70,8 @@ default-build:
         # The steps that will be executed on build
         steps:
           # A step that executes `bundle install` command
-          - bundle-install 
-          
+          - bundle-install
+
           # A custom script step, name value is used in the UI
           # and the code value contains the command that get executed
           - script:
@@ -80,7 +80,7 @@ default-build:
                 echo "ruby version $(ruby --version) running"
                 echo "from location $(which ruby)"
                 echo -p "gem list: $(gem list)"
-          
+
           # Add more steps here:
           #- script:
           #    name: rspec
