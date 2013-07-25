@@ -4,7 +4,7 @@ ubuntu12.04-ruby2.0.0
 
 # What's new
 
-- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.4
+- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.5
   - Update wercker-essential-cookbook to 0.0.4
     - Update phantomjs to 1.9.1
 
@@ -33,9 +33,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
-## 0.1.4
+## 0.1.5
 
-- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.4
+- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.5
   - Update wercker-essential-cookbook to 0.0.4
     - Update phantomjs to 1.9.1
 
