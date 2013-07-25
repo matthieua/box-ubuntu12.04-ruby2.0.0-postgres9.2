@@ -4,8 +4,9 @@ ubuntu12.04-ruby2.0.0
 
 # What's new
 
-- Add license
-- Update readme
+- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.4
+  - Update wercker-essential-cookbook to 0.0.4
+    - Update phantomjs to 1.9.1
 
 # License
 
@@ -31,6 +32,12 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.1.4
+
+- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.4
+  - Update wercker-essential-cookbook to 0.0.4
+    - Update phantomjs to 1.9.1
 
 ## 0.1.3
 
