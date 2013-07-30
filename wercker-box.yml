@@ -1,5 +1,5 @@
 name: ubuntu12.04-ruby2.0.0-psql9.2
-version: 0.0.3
+version: 0.0.4
 inherits: wercker/ubuntu12.04-ruby2.0.0@0.1.5
 type: service
 platform: ubuntu@12.04
@@ -9,9 +9,9 @@ keywords:
 script: |
   sudo apt-get install python-software-properties
   sudo add-apt-repository --yes ppa:pitti/postgresql
+  sudo apt-get --purge remove postgresql postgresql-9.1 postgresql-client-9.1 postgresql-client-common postgresql-common postgresql-doc postgresql-doc-9.1
   sudo apt-get update
   sudo apt-get install postgresql-9.2 postgresql-server-dev-9.2 postgresql-contrib-9.2
-  sudo apt-get remove postgresql-9.1 postgresql-server-dev-9.1
   sudo service postgresql restart
 env:
   WERCKER_POSTGRESQL_PORT: 5432
