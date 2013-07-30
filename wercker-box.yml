@@ -10,7 +10,7 @@ script: |
   sudo apt-get install python-software-properties
   sudo add-apt-repository --yes ppa:pitti/postgresql
   sudo dpkg -l | grep postgres
-  sudo apt-get --purge remove postgresql postgresql-9.1 postgresql-client-9.1 postgresql-client-common postgresql-common postgresql-doc postgresql-doc-9.1 --yes
+  sudo apt-get --purge remove postgresql-client postgresql-client-9.1 postgresql-client-common --yes
   sudo apt-get update
   sudo apt-get install postgresql-9.2 postgresql-server-dev-9.2 postgresql-contrib-9.2
   sudo service postgresql restart
