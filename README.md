@@ -1,5 +1,7 @@
 # ubuntu12.04-ruby2.0.0-postgres9.2 box
 
+[![wercker status](https://app.wercker.com/status/16581df5b55baa68ea86c99b28733a2b/m "wercker status")](https://app.wercker.com/project/bykey/16581df5b55baa68ea86c99b28733a2b)
+
 ubuntu12.04-ruby2.0.0-postgres9.2
 
 # License
