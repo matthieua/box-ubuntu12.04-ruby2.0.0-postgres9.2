@@ -1,5 +1,5 @@
 name: ubuntu12.04-ruby2.0.0-psql9.2
-version: 0.0.7
+version: 0.0.8
 inherits: wercker/ubuntu12.04-ruby2.0.0@0.1.5
 type: service
 platform: ubuntu@12.04
