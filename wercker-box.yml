@@ -8,12 +8,11 @@ keywords:
   - postgresql9.2
 script: |
   sudo apt-get install python-software-properties
-  sudo add-apt-repository --yes ppa:pitti/postgresql
-  sudo service postgresql stop
+  sudo add-apt-repository ppa:pitti/postgresql --yes
   sudo dpkg -l | grep postgres
   sudo apt-get --purge remove postgresql-client postgresql-client-9.1 postgresql-client-common --yes
   sudo apt-get update
-  sudo apt-get install postgresql-9.2 postgresql-server-dev-9.2 postgresql-contrib-9.2
-  sudo service postgresql start
+  sudo apt-get install postgresql-9.2 postgresql-server-dev-9.2 postgresql-contrib-9.2 --yes
+  sudo service postgresql restart
 env:
   WERCKER_POSTGRESQL_PORT: 5432
