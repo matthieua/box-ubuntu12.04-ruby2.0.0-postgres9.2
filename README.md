@@ -1,18 +1,12 @@
-# ubuntu12.04-ruby2.0.0 box
+# ubuntu12.04-ruby2.0.0-postgres9.2 box
 
-ubuntu12.04-ruby2.0.0
-
-# What's new
-
-- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.5
-  - Update wercker-essential-cookbook to 0.0.4
-    - Update phantomjs to 1.9.1
+ubuntu12.04-ruby2.0.0-postgres9.2
 
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 wercker
+Copyright (c) 2013 Matthieu Aussaguel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -33,17 +27,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
-## 0.1.5
-
-- Update inheritance to wercker/ubuntu12.04-webessentials@0.0.5
-  - Update wercker-essential-cookbook to 0.0.4
-    - Update phantomjs to 1.9.1
-
-## 0.1.3
-
-- Add license
-- Update readme
-
-## 0.1.2
+## 0.0.1
 
 - Initial release
